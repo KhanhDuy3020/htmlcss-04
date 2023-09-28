@@ -65,6 +65,7 @@ button {
 .navbar__link:hover {
     color: #000958;
     text-shadow: 1px 0 0 currentColor;
+    transition: 0.2s;
 }
 
 .header__btn {
@@ -73,4 +74,213 @@ button {
     padding: 18px 31px;
     border-radius: 25px;
     border: 1px solid rgba(0, 9, 88, 0.7);
+    transition: 0.2s;
+}
+
+.header__btn:hover {
+    color: #FFF;
+    background-color: #FF5B2E;
+    border: 1px solid #FF5B2E;
+}
+
+
+/* ==================== Header ==================== */
+
+.hero {
+    margin-top: 100px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__media {
+    position: relative;
+    display: flex;
+}
+
+.hero__img-wrap {
+    position: relative;
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 388px;
+    height: 488px;
+    border-radius: 16px;
+    background: #FE997B;
+    border: 3px solid #FFF;
+}
+
+.hero__img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: inherit;
+}
+
+.hero__decor {
+    position: absolute;
+    z-index: -1;
+}
+
+.hero__decor-left {
+    left: -58px;
+    bottom: 10px;
+}
+
+.hero__decor-right {
+    top: 16px;
+    right: -43px;
+}
+
+.hero__img-wrap-small {
+    align-self: flex-end;
+    width: 186px;
+    height: 244px;
+    background: #FAA7AD;
+    border: 2px solid #fadadc;
+    margin: 0 0 -58px -24px;
+}
+
+.hero__list {
+    position: absolute;
+    left: 129px;
+    bottom: -94px;
+    width: 250px;
+    height: 156px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+}
+
+.hero-item {
+    padding: 18px 14px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-item__thumb {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+    background: #FEC23F;
+}
+
+.hero-item__thumb-under {
+    background-color: #C6E2FA;
+}
+
+.hero-item__title {
+    color: #181E52;
+    font-size: 0.875rem;
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    line-height: 0.875rem;
+}
+
+.hero-item__horizontal-line {
+    width: 222px;
+    height: 2px;
+    background: #F2F2F2;
+    margin: 0 auto;
+}
+
+.hero-item__skeleton {
+    margin-top: 6px;
+    width: var(--width, 118px);
+    height: 4px;
+    border-radius: 10px;
+    opacity: 0.08;
+    background: #000958;
+}
+
+.hero__content {
+    width: 466px;
+}
+
+.hero__heading {
+    color: #000958;
+    font-family: 'Sora', sans-serif;
+    font-size: 4.125rem;
+    font-weight: 800;
+    line-height: 4.75rem;
+}
+
+.hero__desc {
+    display: inline-block;
+    margin-top: 24px;
+    color: #656689;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+
+.hero__row {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.hero__btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 30px;
+    border-radius: 31px;
+    background: #FF5B2E;
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+
+.hero__btn-info {
+    display: inline-block;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.hero__row-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    background-color: #FFFAF5;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.hero__btn:hover .hero__row-icon {
+    transform: translateX(5px);
+    -webkit-transform: translateX(5px);
+    -moz-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    -o-transform: translateX(5px);
+}
+
+.hero__btn:hover {
+    opacity: 0.9;
+}
+
+.hero__cta-link {
+    padding: 20px 0;
+    color: #000958;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration-line: underline;
+    transition: 0.2s;
+}
+
+.hero__cta-link:hover {
+    font-weight: 700;
 }
