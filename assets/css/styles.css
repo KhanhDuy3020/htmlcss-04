@@ -50,6 +50,18 @@ button {
     line-height: 1.875rem;
 }
 
+.btn {
+    display: inline-block;
+    padding: 20px 40px;
+    color: #FF5B2E;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 31px;
+    border: 1px solid rgb(255, 91, 46, 0.6);
+    transition: 0.2s;
+}
+
 
 /* ==================== Header ==================== */
 
@@ -463,6 +475,9 @@ button {
     box-shadow: 11px 18px 65px 0px rgba(255, 155, 121, 0.12);
 }
 
+
+/* ==================== Features ==================== */
+
 .features {
     padding: 130px 0;
 }
@@ -633,4 +648,314 @@ button {
     font-size: 1rem;
     font-weight: 500;
     text-decoration: underline;
+}
+
+
+/* ==================== Service ==================== */
+
+.service {
+    padding: 68px 0 100px;
+}
+
+.service__label,
+.staff__label {
+    color: #5E6085;
+    font-family: Sora;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.service__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.service__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service__media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+    width: 440px;
+}
+
+.service__img-wrap {
+    position: relative;
+    height: 650px;
+    width: 100%;
+}
+
+.service__img-wrap::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 350px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #9DF1FB 0%, #73D0DB 108.14%);
+    z-index: -1;
+}
+
+.service__img {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.service__column {
+    width: 25.2%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.service-item {
+    border-radius: 10px;
+    padding: 30px 20px;
+    border: 2px solid rgba(255, 188, 122, 0.26);
+    background: #FFF;
+}
+
+.service-item__heading {
+    position: relative;
+    padding-left: 12px;
+    color: #000958;
+    font-family: Sora;
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+
+.service-item__heading::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 2px;
+    height: 22px;
+    background: linear-gradient(90deg, #FF5B2E 0.39%, #FFA187 100.29%);
+    border-radius: 2px;
+}
+
+.service-item__desc {
+    margin-top: 18px;
+    color: #656689;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.service-item__more {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.service-item__link {
+    color: #34396A;
+    font-family: Sora;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.service-item__link:hover {
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+
+
+/* ==================== Staff ==================== */
+
+.staff {
+    padding: 130px 0;
+}
+
+.staff__label,
+.staff__heading {
+    text-align: center;
+}
+
+.staff__heading {
+    margin-top: 15px;
+}
+
+.staff__list {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 35px;
+}
+
+.staff-item__img-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 16px;
+    border-radius: 129.5px;
+    /* overflow: hidden; */
+}
+
+.staff-item:nth-of-type(1) .staff-item__img-wrap {
+    color: #90CCFF;
+}
+
+.staff-item:nth-of-type(2) .staff-item__img-wrap {
+    color: #FF997E;
+}
+
+.staff-item:nth-of-type(3) .staff-item__img-wrap {
+    color: #FABF3E;
+}
+
+.staff-item:nth-of-type(4) .staff-item__img-wrap {
+    color: #5BD6E2;
+}
+
+.staff-item__img-wrap::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    inset: 33px 0 0 0;
+    border-radius: inherit;
+    background: currentColor;
+    z-index: -1;
+}
+
+.staff__list .staff-item:nth-of-type(2n+1) .staff-item__decor {
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+}
+
+.staff__list .staff-item:nth-of-type(2n) .staff-item__decor {
+    position: absolute;
+    display: inline-block;
+    top: 33px;
+}
+
+.staff-item__img {
+    width: 100%;
+    display: block;
+    border-radius: 129.5px;
+}
+
+.staff-item__title {
+    margin-top: 29px;
+    color: #656689;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.staff-item__name {
+    margin-top: 14px;
+    color: #000958;
+    text-align: center;
+    font-family: Sora;
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+
+.staff__cta-wrap {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.staff__link:hover {
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+
+
+/* ==================== Pricing ==================== */
+
+.pricing {
+    padding: 86px 0;
+    background: #fff6ed;
+}
+
+.pricing__heading,
+.pricing__desc {
+    text-align: center;
+}
+
+.pricing__desc {
+    margin-top: 24px;
+    width: 709px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pricing__switch-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+}
+
+.pricing__switch-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 276px;
+    height: 56px;
+    padding: 0 40px;
+    border: 1px solid #ff5b2e99;
+    border-radius: 99px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.pricing__switch-label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 100%;
+    background: #ff5b2e;
+    border-radius: inherit;
+}
+
+.pricing__switch-value {
+    position: relative;
+    z-index: 1;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1rem;
+}
+
+.pricing__switch-input:checked+.pricing__switch-label::before {
+    width: 131px;
+    left: auto;
+    right: 0;
+}
+
+.pricing__switch-input:not(:checked)+.pricing__switch-label .pricing__switch-value:nth-of-type(2),
+.pricing__switch-input:checked+.pricing__switch-label .pricing__switch-value:nth-of-type(1) {
+    color: #ff5b2e;
+}
+
+.pricing__switch-inner {
+    position: relative;
+}
+
+.pricing__sale-off {
+    position: absolute;
+    top: -10px;
+    right: -112px;
 }
