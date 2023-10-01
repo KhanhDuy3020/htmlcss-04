@@ -5,3 +5,4 @@ commit 3: Hero</br>
 commit 4: About</br>
 commit 5: features</br>
 commit 6: service + staff
+commit 7: pricing
